@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import { FcGoogle } from 'react-icons/fc';
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import GoogleLogin from "../GoogleLogin/GoogleLogin";
 
 const Login = () => {
 
@@ -129,7 +129,7 @@ const Login = () => {
                   </Link>
                </p>
                <p className="divider">or</p> 
-            <button className='flex items-center mx-auto btn btn-sm bg-white border border-gray-500 gap-3'><FcGoogle></FcGoogle><span>Log in with Google</span></button>
+              <GoogleLogin></GoogleLogin>
               </form>
             {
                 loginError && <p className="text-red-500">{ loginError}</p>          

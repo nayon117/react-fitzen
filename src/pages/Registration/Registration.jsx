@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import GoogleLogin from "../GoogleLogin/GoogleLogin";
 const Registration = () => {
     // states
     const [showPassword, setShowPassword] = useState(false);
@@ -185,10 +185,7 @@ const Registration = () => {
                 </Link>
               </p>
               <p className="divider">or</p>
-              <button className="flex items-center mx-auto btn btn-sm bg-white border border-gray-500 gap-3">
-                <FcGoogle></FcGoogle>
-                <span>Log in with Google</span>
-              </button>
+              <GoogleLogin></GoogleLogin>
             </form>
             {
                 registrationError && <p className="text-red-500">{ registrationError}</p>
