@@ -10,7 +10,7 @@ const Registration = () => {
     const [registrationError,setRegistrationError] = useState('')
      
     // use context 
-    const { signUp } = useContext(AuthContext)
+    const { signUp, handleUpdateProfile } = useContext(AuthContext)
      
     
     // onsubmit functionlity 
@@ -19,8 +19,8 @@ const Registration = () => {
 
         // get data from input fields 
         const form = new FormData(e.currentTarget)
-        // const name = form.get('name')
-        // const photo = form.get('photo')
+        const name = form.get('name')
+        const photo = form.get('photo')
         const email = form.get('email')
         const password = form.get('password')
         const check = e.target.check.checked;
@@ -52,6 +52,12 @@ const Registration = () => {
             .then(res => {
                 console.log(res.user);
                 toast.success('sign up successfull')
+                handleUpdateProfile(name, photo)
+                .then(() => {
+                    toast.success('profile updated')
+                  }).catch((error) => {
+                    console.log(error);
+                  });
             })
             .catch(error => {
                 console.log(error);

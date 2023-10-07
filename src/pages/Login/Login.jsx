@@ -1,11 +1,41 @@
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Login = () => {
 
-    const [showPassword,setShowPassword] = useState(false)
+    const [showPassword, setShowPassword] = useState(false)
+    const [loginError,setLoginError] = useState('')
+
+    // context 
+    const {signIn} = useContext(AuthContext)
+    
+    const handleLogin = (e) => {
+        e.preventDefault()
+
+        // get data from field 
+        const form = new FormData(e.currentTarget)
+        const email = form.get('email')
+        const password = form.get('password')
+
+        // reset error 
+        setLoginError('');
+
+        // sign In user
+
+        signIn(email, password)
+            .then(res => {
+                console.log(res.user);
+                toast.success('Login Successful')
+            })
+            .catch(error => {
+                console.log(error);
+                setLoginError(error.message)
+        })
+    }
 
     return (
         <section className="bg-gray-50 dark:bg-gray-900">
@@ -15,7 +45,7 @@ const Login = () => {
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Sign in to your account
               </h1>
-              <form  className="space-y-4 md:space-y-6" >
+              <form onSubmit={handleLogin} className="space-y-4 md:space-y-6" >
                 <div>
                   <label
                     htmlFor="email"
@@ -101,7 +131,9 @@ const Login = () => {
                <p className="divider">or</p> 
             <button className='flex items-center mx-auto btn btn-sm bg-white border border-gray-500 gap-3'><FcGoogle></FcGoogle><span>Log in with Google</span></button>
               </form>
-             
+            {
+                loginError && <p className="text-red-500">{ loginError}</p>          
+             }
             </div>
           </div>
         </div>
