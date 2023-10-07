@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "name": "Yoga Retreat in the Himalayas",
+      "image": "https://i.ibb.co/8xt9bsF/fitness-alps.jpg",
+      "price": "$1,500",
+      "short_description": "Experience tranquility in the heart of the Himalayas.",
+      "details": "Join us for a 7-day yoga retreat in the stunning Himalayan mountains. This retreat is designed to help you reconnect with nature, deepen your yoga practice, and find inner peace. Amidst breathtaking landscapes, you'll participate in daily yoga sessions, meditation, and mindfulness practices. Our experienced instructors will guide you on a journey of self-discovery and relaxation. All-inclusive package with accommodations, healthy meals, and optional excursions."
+    },
+    {
+      "id": "2",
+      "name": "Beach Yoga and Meditation",
+      "image": "https://i.ibb.co/mhnz6r7/beach-yoga.jpg",
+      "price": "$900",
+      "short_description": "Relax and rejuvenate on the beautiful shores of Bali.",
+      "details": "Escape to the paradise island of Bali for a 10-day beach yoga and meditation retreat. Recharge your body and soul by the ocean. This retreat offers a unique blend of yoga, meditation, and cultural experiences. Wake up to the sound of the waves, practice yoga on the beach, and explore Balinese traditions. Our expert teachers will lead you through daily yoga and meditation sessions to enhance your well-being. All-inclusive package includes beachfront accommodations, healthy meals, and cultural excursions."
+    },
+    {
+      "id": "3",
+      "name": "Fitness Bootcamp in the Alps",
+      "image": "https://i.ibb.co/92L3myR/fitness.jpg",
+      "price": "$1,200",
+      "short_description": "Challenge yourself with our high-intensity fitness bootcamp.",
+      "details": "Embark on a 14-day fitness journey in the stunning Swiss Alps. Get in shape, conquer mountain trails, and transform your fitness level. This bootcamp combines intense workouts, outdoor adventures, and breathtaking scenery. You'll work with certified trainers to push your limits and achieve your fitness goals. Daily activities include hiking, trail running, and strength training. All-inclusive package includes cozy mountain lodge accommodations, nutritious meals, and access to fitness facilities."
+    },
+    {
+      "id": "4",
+      "name": "Meditation and Mindfulness Retreat",
+      "image": "https://i.ibb.co/4Jxm49D/meditaion.jpg",
+      "price": "$950",
+      "short_description": "Discover inner calm and mindfulness in a serene forest setting.",
+      "details": "Find inner peace through daily meditation and mindfulness practices during our 5-day retreat in the tranquil forest retreat center. Nestled in a serene forest, this retreat offers a quiet and reflective atmosphere. Guided meditation sessions and mindfulness workshops will help you reduce stress and enhance your well-being. You'll also have free time for self-reflection and nature walks. All-inclusive package includes comfortable cabins, vegetarian meals, and access to meditation spaces."
+    },
+    {
+      "id": "5",
+      "name": "Pilates and Wellness Retreat",
+      "image": "https://i.ibb.co/Gcb7fBM/wellness.jpg",
+      "price": "$1,100",
+      "short_description": "Restore balance to your body and mind with Pilates and wellness.",
+      "details": "Experience a holistic approach to health and well-being in our 7-day Pilates and wellness retreat. Strengthen your body and relax your mind through daily Pilates sessions, yoga, and spa treatments. Our wellness experts will guide you on a transformative journey. Enjoy nourishing meals, spa therapies, and workshops on healthy living. All-inclusive package includes luxury accommodations, gourmet meals, and access to wellness amenities."
+    },
+    {
+      "id": "6",
+      "name": "Vinyasa Yoga Intensive",
+      "image": "https://i.ibb.co/ZX54vL6/viniysa-yoga.jpg",
+      "price": "$800",
+      "short_description": "Deepen your Vinyasa practice in the heart of India.",
+      "details": "Immerse yourself in a 10-day Vinyasa yoga intensive in the birthplace of yoga, India. Enhance your practice with experienced instructors. Daily Vinyasa yoga sessions will help you build strength, flexibility, and mindfulness. You'll also explore Indian culture, visit sacred sites, and savor local cuisine. All-inclusive package includes comfortable accommodations, traditional meals, and guided cultural experiences."
+    }
+  ]
+
