@@ -5,8 +5,8 @@ import Footer from "../pages/Footer/Footer";
 
 const MainLayout = () => {
   return (
-    <div className="">
-      <div className="container mx-auto px-4 md:px-8 lg:px-16 font-poppins">
+    <div className="font-poppins">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 ">
         <Navbar></Navbar>
       </div>
       <div className="min-h-screen container mx-auto px-4 md:px-8 lg:px-16">
