@@ -5,6 +5,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Registration from "../pages/Registration/Registration";
 import EventDetails from "../pages/EventDetails/EventDetails";
+import Booking from "../pages/Booking/Booking";
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const myCreatedRoute = createBrowserRouter([
                 path: "/",
                 element: <Home></Home>,
                 loader:()=>fetch('/fitness.json')
+           },
+            {
+                path: "/booking",
+                element: <Booking></Booking> ,
            },
             {
                 path: "/login",
