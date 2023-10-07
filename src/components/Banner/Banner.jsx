@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div>
+        <div className="pt-3">
       <div
         className="hero relative h-[80vh] rounded"
         style={{

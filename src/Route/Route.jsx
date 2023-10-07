@@ -4,6 +4,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Registration from "../pages/Registration/Registration";
+import EventDetails from "../pages/EventDetails/EventDetails";
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -23,6 +24,11 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path: "/register",
                 element: <Registration></Registration>
+           },
+            {
+                path: "/event/:id",
+                element: <EventDetails></EventDetails>,
+                loader:()=>fetch('/fitness.json')
            },
         ]
         

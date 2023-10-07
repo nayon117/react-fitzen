@@ -5,10 +5,10 @@ import toast from "react-hot-toast";
 
 const Navbar = () => {
     const navLinks = <>
-     <li> <NavLink to='/'>Home</NavLink>  </li>
-     <li> <NavLink to='/event'>Event</NavLink>  </li>
-     <li> <NavLink to='/blogs'>Blogs</NavLink>  </li>
-     <li> <NavLink to='/contact'>Contact</NavLink>  </li>
+     <li className="font-medium text-base"> <NavLink to='/'>Home</NavLink>  </li>
+     <li className="font-medium text-base"> <NavLink to='/statistics'>Statistics</NavLink>  </li>
+     <li className="font-medium text-base"> <NavLink to='/booking'>Booking History</NavLink>  </li>
+     <li className="font-medium text-base"> <NavLink to='/contact'>Contact</NavLink>  </li>
     </>
   
     // context 
@@ -26,7 +26,7 @@ const Navbar = () => {
   }
   
     return (
-        <div className="navbar py-3 bg-base-100">
+        <div className="navbar py-4 bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
