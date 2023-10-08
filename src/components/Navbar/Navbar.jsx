@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 const Navbar = () => {
     const navLinks = <>
      <li className="font-medium text-base"> <NavLink to='/'>Home</NavLink>  </li>
-     <li className="font-medium text-base"> <NavLink to='/statistics'>Statistics</NavLink>  </li>
+     <li className="font-medium text-base"> <NavLink to='/guides'>Guides</NavLink>  </li>
  <li className="font-medium text-base"> <NavLink to='/booking'>Booking History</NavLink>  </li>
      <li className="font-medium text-base"> <NavLink to='/contact'>Contact</NavLink>  </li>
     </>

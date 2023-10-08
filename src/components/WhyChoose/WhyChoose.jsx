@@ -18,9 +18,9 @@ const WhyChoose = () => {
               </p>
               <div className="lg:hidden lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6">
                 <img
-                  src="https://i.ibb.co/SKLJ7WX/austin-distel-jp-Hw8ndw-J-Q-unsplash-1.png"
-                  alt="ongoing meeting"
-                  className="w-full obejct-fit object-center object-fill h-full"
+                  src="https://i.ibb.co/BqGLz22/yoga-instructor.jpg"
+                  alt="instructer"
+                  className="w-full rounded obejct-fit object-center object-fill h-full"
                 />
               </div>
               <div className="mt-6 md:mt-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 lg:mt-6 2xl:mt-12">
@@ -88,9 +88,9 @@ const WhyChoose = () => {
             </div>
             <div className="hidden lg:block lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6">
               <img
-                src="https://i.ibb.co/SKLJ7WX/austin-distel-jp-Hw8ndw-J-Q-unsplash-1.png"
+                src="https://i.ibb.co/BqGLz22/yoga-instructor.jpg"
                 alt="ongoing meeting"
-                className="w-full obejct-fit object-center object-fill h-full"
+                className="w-full rounded obejct-fit object-center object-fill h-full"
               />
             </div>
           </div>
