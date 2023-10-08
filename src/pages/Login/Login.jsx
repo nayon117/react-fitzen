@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -11,7 +11,11 @@ const Login = () => {
     const [loginError,setLoginError] = useState('')
 
     // context 
-    const {signIn} = useContext(AuthContext)
+  const { signIn } = useContext(AuthContext)
+  
+
+  const location = useLocation()
+  const navigate = useNavigate()
     
     const handleLogin = (e) => {
         e.preventDefault()
@@ -29,7 +33,8 @@ const Login = () => {
         signIn(email, password)
             .then(res => {
                 console.log(res.user);
-                toast.success('Login Successful')
+              toast.success('Login Successful')
+              navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error);

@@ -90,7 +90,7 @@ const FeedBacks = () => {
               </p>
             </div>
             <img
-              src="https://i.ibb.co/vmqhQZ6/avatar-2.png"
+              src="https://i.ibb.co/JdVVPk9/avater4.png"
               alt="Display avatar of David"
               role="img"
             />
