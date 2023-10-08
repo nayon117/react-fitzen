@@ -3,7 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import EventDetailsCard from "./EventDetailsCard";
 
 const EventDetails = () => {
-    const [events,setEvents] = useState([])
+    const [events,setEvents] = useState({})
     const {id} = useParams()
     const eventsData = useLoaderData()
     useEffect(() => {

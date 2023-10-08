@@ -8,6 +8,9 @@ import EventDetails from "../pages/EventDetails/EventDetails";
 import Booking from "../pages/Booking/Booking";
 import Contact from "../pages/Contact/Contact";
 import PrivateRoute from "./PrivateRoute";
+import Blogs from "../pages/Blog/Blogs";
+import BlogDetails from "../pages/BlogDetails/BlogDetails";
+ 
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -21,12 +24,17 @@ const myCreatedRoute = createBrowserRouter([
                 loader:()=>fetch('/fitness.json')
            },
             {
+                path: "/blogs",
+                element: <PrivateRoute><Blogs></Blogs></PrivateRoute>,
+                loader:()=>fetch('/blogs.json')
+           },
+            {
                 path: "/booking",
                 element: <PrivateRoute><Booking></Booking></PrivateRoute> ,
            },
             {
                 path: "/contact",
-                element: <PrivateRoute> <Contact></Contact> </PrivateRoute>,
+                element:<Contact></Contact> ,
            },
             {
                 path: "/login",
@@ -38,8 +46,13 @@ const myCreatedRoute = createBrowserRouter([
            },
             {
                 path: "/event/:id",
-                element: <EventDetails></EventDetails>,
+                element:<PrivateRoute> <EventDetails></EventDetails></PrivateRoute>,
                 loader:()=>fetch('/fitness.json')
+           },
+            {
+                path: "/blog/:id",
+                element:<PrivateRoute> <BlogDetails></BlogDetails> </PrivateRoute>,
+                loader:()=>fetch('/blogs.json')
            },
         ]
         
