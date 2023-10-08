@@ -36,7 +36,12 @@ const NewsLetter = () => {
               </div>
             </div>
             <div className="w-11/12 xl:w-5/12 mx-auto xl:mx-0 mt-8 xl:mt-0 flex justify-end md:w-5/12 bg-indigo-100 dark:bg-indigo-800 relative py-20">
-              <div className="h-4/5 w-4/5">
+              <div
+                data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500"
+                className="h-4/5 w-4/5"
+              >
                 <img
                   src="https://i.ibb.co/xmLwvjJ/jump.jpg"
                   alt="A man jumping infront of a graffiti"

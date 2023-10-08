@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import toast from 'react-hot-toast';
 import { AiOutlineClockCircle } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const EventDetailsCard = ({ events }) => {
     const {id, name, image, details } = events || {}
@@ -32,8 +33,10 @@ const EventDetailsCard = ({ events }) => {
                 <button onClick={handleBooking} className='btn btn-neutral my-3 '><AiOutlineClockCircle className='text-xl'></AiOutlineClockCircle>Book Now</button>
            </div>
             <div className='md:px-8 lg:px-0'>
-            <h2 className='text-2xl font-medium py-3'>{name}</h2>
-            <p className='font-medium'>{ details}</p>
+            <h2 data-aos="fade-left"
+       className='text-2xl font-medium py-3'>{name}</h2>
+                <p className='font-medium'>{details}</p>
+                <Link to='/'><button className='btn btn-neutral my-4'>Back to home</button></Link>
            </div>
         </div>
     );

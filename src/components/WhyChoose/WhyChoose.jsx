@@ -10,13 +10,19 @@ const WhyChoose = () => {
         <div className="xl:mx-auto xl:container  xl:px-20 md:px-6 px-4 py-12">
           <div className="lg:flex items-center justify-center lg:space-x-12 2xl:space-x-6">
             <div>
-              <p className="lg:text-4xl text-3xl font-extrabold leading-9 text-gray-800">
+              <p className="text-xl md:text-2xl  lg:text-4xl font-bold leading-9 text-gray-800">
                 Why choose us
               </p>
               <p className="text-lg leading-7 text-gray-600 mt-4 xl:w-7/12 w-full">
-              Discover the Reasons to Choose Our Retreats for Wellness and Transformation.
+                Discover the Reasons to Choose Our Retreats for Wellness and
+                Transformation.
               </p>
-              <div className="lg:hidden lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6">
+              <div
+                data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500"
+                className="lg:hidden lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6"
+              >
                 <img
                   src="https://i.ibb.co/BqGLz22/yoga-instructor.jpg"
                   alt="instructer"
@@ -27,66 +33,79 @@ const WhyChoose = () => {
                 <div className="flex items-center">
                   <div className="w-16 h-16 relative">
                     <div className=" flex-shrink-0 z-20  w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                     <p><AiOutlineClockCircle className="text-5xl"></AiOutlineClockCircle></p>
+                      <p>
+                        <AiOutlineClockCircle className="text-5xl"></AiOutlineClockCircle>
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start flex-col ml-6 pt-8">
                     <h2 className="text-lg font-semibold leading-4 text-gray-800">
-                    Time-Tested 
+                      Time-Tested
                     </h2>
                     <p className="lg:w-40 2xl:w-52 text-base leading-6 mt-2 text-gray-600">
-                    Decades of retreat excellence.
+                      Decades of retreat excellence.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <div className="w-16 h-16 relative">
                     <div className=" flex-shrink-0 z-20  w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                    <p><BiSolidUser className="text-5xl"></BiSolidUser></p>
+                      <p>
+                        <BiSolidUser className="text-5xl"></BiSolidUser>
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start flex-col ml-6 pt-8">
                     <h2 className="text-lg font-semibold leading-4 text-gray-800">
-                    User-Friendly 
+                      User-Friendly
                     </h2>
                     <p className="lg:w-40 2xl:w-52 text-base leading-6 mt-2 text-gray-600">
-                    Streamlined, user-friendly booking.
+                      Streamlined, user-friendly booking.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <div className="w-16 h-16 relative">
                     <div className=" flex-shrink-0 z-20  w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                    <p><HiOutlineLightBulb className="text-5xl text-black"></HiOutlineLightBulb></p>
+                      <p>
+                        <HiOutlineLightBulb className="text-5xl text-black"></HiOutlineLightBulb>
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start flex-col ml-6 pt-8">
                     <h2 className="text-lg font-semibold leading-4 text-gray-800">
-                    Innovative Experiences
+                      Innovative Experiences
                     </h2>
                     <p className="lg:w-40 2xl:w-52 text-base leading-6 mt-2 text-gray-600">
-                    Always fresh, always unique.
+                      Always fresh, always unique.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <div className="w-16 h-16 relative">
                     <div className=" flex-shrink-0 z-20  w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                    <p><GiAchievement className="text-5xl"></GiAchievement></p>
+                      <p>
+                        <GiAchievement className="text-5xl"></GiAchievement>
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start flex-col ml-6 pt-8">
                     <h2 className="text-lg font-semibold leading-4 text-gray-800">
-                    Achievement-Oriented
+                      Achievement-Oriented
                     </h2>
                     <p className="lg:w-40 2xl:w-52 text-base leading-6 mt-2 text-gray-600">
-                    Achieve your wellness goals with us
+                      Achieve your wellness goals with us
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="hidden lg:block lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6">
+            <div
+              data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1500"
+              className="hidden lg:block lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6"
+            >
               <img
                 src="https://i.ibb.co/BqGLz22/yoga-instructor.jpg"
                 alt="ongoing meeting"

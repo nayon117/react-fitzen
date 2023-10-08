@@ -5,7 +5,9 @@ const EventsCard = ({ event }) => {
     const {id, name, image, price, short_description } = event || {};
     
   return (
-    <div className="card card-compact py-4 px-3 flex flex-col bg-base-100 shadow-xl">
+    <div data-aos="zoom-in"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="1500" className="card card-compact py-4 px-3 flex flex-col bg-base-100 shadow-xl">
       <figure>
         <img src={image} alt="image" />
       </figure>
