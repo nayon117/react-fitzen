@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center   p-10 bg-base-200 text-base-content rounded">
+        <footer className="footer footer-center   p-10 bg-neutral text-white rounded">
             <div className="mx-auto container space-y-4 px-4 md:px-8 lg:px-16">
             <nav className="grid grid-flow-col gap-4">
             <a className="link link-hover">About us</a> 
@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
         </nav> 
         <aside>
-            <p>Copyright © 2023 - All right reserved by FitZen Industries Ltd</p>
+            <p>Copyright © 2023 - All right reserved by FitZen</p>
         </aside>
             </div>
         </footer>
