@@ -5,10 +5,11 @@ const Footer = () => {
         <footer className="footer footer-center   p-10 bg-neutral text-white rounded">
             <div className="mx-auto container space-y-4 px-4 md:px-8 lg:px-16">
             <nav className="grid grid-flow-col gap-4">
-            <Link to='/' className="link link-hover">About us</Link> 
+            <Link to='/about' className="link link-hover">About us</Link> 
+            <Link to='/blogs' className="link link-hover">Blog</Link> 
+            <Link to='/faq' className="link link-hover">FAQ</Link> 
             <Link to='/contact' className="link link-hover">Contact</Link> 
-            <a className="link link-hover">FAQ</a> 
-            <a className="link link-hover">Privacy Policy</a>
+             
         </nav> 
         <nav>
             <div className="grid grid-flow-col gap-4">

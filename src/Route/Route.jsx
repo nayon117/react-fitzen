@@ -10,53 +10,80 @@ import Contact from "../pages/Contact/Contact";
 import PrivateRoute from "./PrivateRoute";
 import Blogs from "../pages/Blog/Blogs";
 import BlogDetails from "../pages/BlogDetails/BlogDetails";
- 
+import About from "../pages/About/About";
+import Faq from "../pages/FAQ/Faq";
 
 const myCreatedRoute = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
         path: "/",
-        element: <MainLayout></MainLayout>,
-        errorElement: <ErrorPage></ErrorPage>,
-        children: [
-            {
-                path: "/",
-                element: <Home></Home>,
-                loader:()=>fetch('/fitness.json')
-           },
-            {
-                path: "/blogs",
-                element: <PrivateRoute><Blogs></Blogs></PrivateRoute>,
-                loader:()=>fetch('/blogs.json')
-           },
-            {
-                path: "/booking",
-                element: <PrivateRoute><Booking></Booking></PrivateRoute> ,
-           },
-            {
-                path: "/contact",
-                element:<Contact></Contact> ,
-           },
-            {
-                path: "/login",
-                element:<Login></Login> 
-           },
-            {
-                path: "/register",
-                element: <Registration></Registration>
-           },
-            {
-                path: "/event/:id",
-                element:<PrivateRoute> <EventDetails></EventDetails></PrivateRoute>,
-                loader:()=>fetch('/fitness.json')
-           },
-            {
-                path: "/blog/:id",
-                element:<PrivateRoute> <BlogDetails></BlogDetails> </PrivateRoute>,
-                loader:()=>fetch('/blogs.json')
-           },
-        ]
-        
-    }
-])
+        element: <Home></Home>,
+        loader: () => fetch("/fitness.json"),
+      },
+      {
+        path: "/blogs",
+        element: (
+          <PrivateRoute>
+            <Blogs></Blogs>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/blogs.json"),
+      },
+      {
+        path: "/booking",
+        element: (
+          <PrivateRoute>
+            <Booking></Booking>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/faq",
+        element: <Faq></Faq>,
+      },
+
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Registration></Registration>,
+      },
+      {
+        path: "/event/:id",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <EventDetails></EventDetails>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/fitness.json"),
+      },
+      {
+        path: "/blog/:id",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <BlogDetails></BlogDetails>{" "}
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/blogs.json"),
+      },
+    ],
+  },
+]);
 
 export default myCreatedRoute;
