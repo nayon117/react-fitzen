@@ -1,7 +1,7 @@
 [
     {
       "id": "1",
-      "name": "Yoga Retreat in the Himalayas",
+      "name": "Himalayan Retreat Planning",
       "image": "https://i.ibb.co/8xt9bsF/fitness-alps.jpg",
       "price": "$1,500",
       "short_description": "Experience tranquility in the heart of the Himalayas.",
@@ -9,7 +9,7 @@
     },
     {
       "id": "2",
-      "name": "Beach Yoga and Meditation",
+      "name": "Bali Beach Event Coordination",
       "image": "https://i.ibb.co/mhnz6r7/beach-yoga.jpg",
       "price": "$900",
       "short_description": "Relax and rejuvenate on the beautiful shores of Bali.",
@@ -17,7 +17,7 @@
     },
     {
       "id": "3",
-      "name": "Fitness Bootcamp in the Alps",
+      "name": "Alpine Fitness & Event Bootcamp",
       "image": "https://i.ibb.co/92L3myR/fitness.jpg",
       "price": "$1,200",
       "short_description": "Challenge yourself with our high-intensity fitness bootcamp.",
@@ -25,7 +25,7 @@
     },
     {
       "id": "4",
-      "name": "Meditation and Mindfulness Retreat",
+      "name": "Forest Meditation Event Retreat",
       "image": "https://i.ibb.co/4Jxm49D/meditaion.jpg",
       "price": "$950",
       "short_description": "Discover inner calm and mindfulness in a serene forest setting.",
@@ -33,7 +33,7 @@
     },
     {
       "id": "5",
-      "name": "Pilates and Wellness Retreat",
+      "name": "Pilates Wellness Retreat",
       "image": "https://i.ibb.co/Gcb7fBM/wellness.jpg",
       "price": "$1,100",
       "short_description": "Restore balance to your body and mind with Pilates and wellness.",
@@ -41,7 +41,7 @@
     },
     {
       "id": "6",
-      "name": "Vinyasa Yoga Intensive",
+      "name": "Vinyasa Yoga Intensive in India",
       "image": "https://i.ibb.co/ZX54vL6/viniysa-yoga.jpg",
       "price": "$800",
       "short_description": "Deepen your Vinyasa practice in the heart of India.",

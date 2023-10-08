@@ -18,7 +18,7 @@ const Booking = () => {
     <div>
           {
               noFound ? <p className="h-[65vh] flex justify-center items-center text-2xl font-bold">{noFound}</p> : <div>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 py-10">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 py-10">
                       {
                           booking.map(bookedEvent => <BookingCard
                               key={bookedEvent.id}
