@@ -6,7 +6,7 @@ FitZen is a dynamic Yoga and Fitness Retreats event management website, offering
 
 ## Demo
 
-Live Link: 
+Live Link: https://react-fitzen-a5d29.web.app/
 
 
 ## Documentation
