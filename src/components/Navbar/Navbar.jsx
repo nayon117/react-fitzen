@@ -74,7 +74,8 @@ const Navbar = () => {
               <button className="btn btn-sm whitespace-nowrap  btn-ghost">
                 {user.displayName}
              </button>
-              </li>         
+                </li>
+                
               <li><button onClick={handleSignOut} className="btn btn-sm whitespace-nowrap  btn-ghost" >Logout</button></li>
             </ul>
             </div>  
