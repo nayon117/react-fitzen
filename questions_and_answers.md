@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `{}`
 
-<i>Write your explanation here</i>
+<i>First we declare a let variable name greeting but didn't assigned any value. then we try to assign a value inside greetign never declared before.so it will be treated as a global variable so after console log the result will be {}</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: -c:"12"
 
-<i>Write your explanation here</i>
+<i>The answer is "12" . Because when we try to use JS addition operatior to a number and a string in  javascript the string always wins.and instead of adding two number its stand side by side under a string. so the answer of 1 + "2" is always "12" under string</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>Here first we try to create a info . and inside info try to changed the food array first index name food[0] to favoriteFood and then info object try to change the food item of favoriteFood using dot notation and console log food.However the main point is all the scenarious affect the info object instead of food because we are not changing anything in food array. so the food array remain unchanged</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:  B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>The answer will be Hi there, undefined because if we use a parameter in a function  and we try to call that function without passing the argument the result of parameter value will get always undefined</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>In this case we see that nums array iterates through forEach method to get every value of nums array. then we check if(num) this means its checks the truthy value only.here in javascript 0 is a falsy value so its skipped and 1, 2, 3 are truthy value. so after iterating the count value will be 3</i>
 
 </p>
 </details>
