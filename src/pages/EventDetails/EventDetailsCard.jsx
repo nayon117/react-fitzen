@@ -34,7 +34,7 @@ const EventDetailsCard = ({ events }) => {
         </button>
       </div>
       <div className="md:px-8 lg:px-0">
-        <h2 data-aos="fade-left" className="text-2xl font-bold py-3">
+        <h2 className="text-2xl font-bold py-3">
           {name}
         </h2>
         <div className="space-y-3">
