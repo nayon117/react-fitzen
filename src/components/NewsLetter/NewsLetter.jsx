@@ -1,4 +1,9 @@
+import toast from "react-hot-toast";
+
 const NewsLetter = () => {
+  const handleSubscribe = () => {
+    toast.success("You have successfully subscribed");
+  };
   return (
     <div>
       <div className="xl:flex xl:justify-end pt-16">
@@ -29,7 +34,11 @@ const NewsLetter = () => {
                       className="focus:outline-none  focus:border-indigo-700 border-gray-300 border rounded-sm py-2 outline-none pl-2 pr-2"
                     />
                   </div>
-                  <button type="submit" className="btn btn-neutral w-full  ">
+                  <button
+                    onClick={handleSubscribe}
+                    type="submit"
+                    className="btn btn-neutral w-full  "
+                  >
                     Subscribe to Newsletter
                   </button>
                 </div>
